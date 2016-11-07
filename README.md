@@ -130,3 +130,8 @@ Un administrador puede editar y eliminar cualquier puesto de trabajo publicado.
 El administrador puede crear o editar los afiliados. Él es el responsable de la activación de un afiliado y también puede desactivarlo. 
  
 Cuando el administrador activa un nuevo afiliado, el sistema crea un único token para ser utilizado por ese afiliado.
+
+
+## Diseño de la base de datos (Puede ser cambiado)
+
+![F5](https://github.com/LeonT27/Bolsa-de-Empleo/blob/master/readmeInfo/img/db.png) 
