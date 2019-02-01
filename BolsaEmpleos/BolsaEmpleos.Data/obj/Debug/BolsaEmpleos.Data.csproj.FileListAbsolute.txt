@@ -1,0 +1,11 @@
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\BolsaEmpleos.Data.dll.config
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\BolsaEmpleos.Data.dll
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\BolsaEmpleos.Data.pdb
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\EntityFramework.dll
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\EntityFramework.xml
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\obj\Debug\BolsaEmpleos.Data.csproj.CoreCompileInputs.cache
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\obj\Debug\BolsaEmpleos.Data.csproj.CopyComplete
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\obj\Debug\BolsaEmpleos.Data.dll
+C:\Users\el-to\source\repos\BolsaEmpleos\BolsaEmpleos.Data\obj\Debug\BolsaEmpleos.Data.pdb

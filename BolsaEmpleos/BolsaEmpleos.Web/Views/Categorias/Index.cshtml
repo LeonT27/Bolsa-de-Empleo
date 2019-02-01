@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BolsaEmpleos.Data.Model.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Categorias</h3>
+
+<p>
+    <a class="waves-effect waves-light btn" href="@Url.Action("Create")">Nueva categoria<i class='material-icons right'>add</i></a>
+</p>
+<table id="itable" class="striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>Accion</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            <label>
+                @Html.DisplayFor(modelItem => item.Estado)
+                <span>@(item.Estado ? "Activo" : "Innactivo")</span>
+            </label>
+        </td>
+        <td>
+            @Html.Partial("_AccionBtn",
+           new ViewDataDictionary(ViewData)
+           {
+               { "accion", "Edit"},
+               { "id", item.Id_Categoria },
+               { "tooltip", "Editar" },
+               { "icon", "edit"}
+           })
+            @Html.Partial("_AccionBtn",
+           new ViewDataDictionary(ViewData)
+           {
+               { "accion", "Delete"},
+               { "id", item.Id_Categoria },
+               { "tooltip", "Eliminar" },
+               { "icon", "delete"}
+           })
+        </td>
+    </tr>
+}
+
+</table>

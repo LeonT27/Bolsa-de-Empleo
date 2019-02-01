@@ -1,0 +1,40 @@
+﻿@model BolsaEmpleos.Data.Model.Categoria
+
+@{
+    ViewBag.Title = "Crear Categoria";
+}
+
+<h3>Crear Categoria</h3>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="row">
+    @Html.ValidationSummary(true, "", new { @class = "red-text text-darken-1" })
+    <div class="row">
+        <div class="input-field col s6">
+            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @id = "Nombre" } })
+            <label for="nombre">Nombre</label>
+            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "red-text text-darken-1" })
+        </div>
+
+        <div class="input-field col s4">
+            <label>
+                <input type="checkbox" id="Estado" name="Estado" value="true" />
+                <span>Estado</span>
+                @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "red-text text-darken-1" })
+            </label>
+        </div>
+
+        <div class="col s2 inputSend">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+                Crear
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+    @Html.Partial("_VolverA", new ViewDataDictionary(ViewData) { { "accion", "Index"}, { "string", "al listado"} })
+</div>
+}
